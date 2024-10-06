@@ -1,0 +1,130 @@
+.carousel-item {
+    background-image: url('../img/product/banner-1989514_640.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+ .icons{
+    display: none;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+.icons .cart:hover i {
+    font-size: 20px;
+}
+.icons .cart i {
+    transition: font-size 0.3s ease;
+}
+ .icons .like:hover i {
+    font-size: 20px;
+}
+.icons .like i {
+    transition: font-size 0.3s ease;
+}
+
+.card {
+    padding: 2px;
+    width: 200px;
+    border: none;
+    
+}
+@media (max-width:470px){
+    .card{
+        width: 150px;
+        margin: 0;
+    }
+    .icons{
+        display: flex;
+        font-size: 0.65rem;
+        margin: 0;
+    }
+    .icons .like:hover i {
+        font-size: 1rem;
+    }
+    .icons .cart:hover i {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 470.1px) and (max-width: 767.9px){
+    .icons{
+        display: flex;
+        font-size: 1rem;
+    }
+}
+@media (max-width:768px){
+    .search-message{
+        display: none;
+    }
+}
+.card-img{
+    position: relative;
+    width: 100%;
+}
+.card-img:hover .black-overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.card-img .icons{
+    position: absolute;
+    bottom: 0.75rem;
+    left: 1rem;
+    z-index: 1;
+}
+.card-img .icons a{
+    color: white;
+}
+.card-img:hover .icons{
+    display: flex;
+}   
+
+.card:hover .card-img, .card-info{
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #f8f8f8;
+}
+
+
+
+@media (max-width: 768px) {
+    .col-text-center {
+        text-align: center;
+    }
+
+    .carousel-row {
+        margin-bottom: 2rem;
+    }
+}
+
+.img-fluid {
+    width: 330px;
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 575.98px) {
+    .img-fluid {
+        width: 230px;
+    }
+}
+
+@media (max-width:399.98px) {
+    .img-fluid {
+        width: 130px;
+    }
+}

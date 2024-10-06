@@ -1,0 +1,18 @@
+.form {
+  margin: auto;
+}
+
+/* For devices with a width of 600px or less */
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+}
+
+
+/* For devices with a width of 768px or more */
+@media (min-width: 600px) {
+  .form {
+    width: 450px;
+  }
+}
